@@ -1,0 +1,8 @@
+print("Enter a name")
+name = input()
+print("Enter a age")
+age = input()
+print("Enter a EID")
+EID = input()
+print("name = {}\n age = {}\n EID = {}".format(name, age, EID))
+# print("name = {2}\n age = {1}\n EID = {0}".format(name, age, EID))
