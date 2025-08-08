@@ -78,8 +78,8 @@ print("Last i ", i )
 
 # rules:
 
-# step shuld be compulsory -ve StopIteration
-# start shld be grter thn EncodingWarning
+# step shuld be compulsory -ve 
+# start shld be grter thn stop
 # actual end minus 1
 
 n=int(input())
