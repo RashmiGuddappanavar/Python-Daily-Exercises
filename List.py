@@ -113,12 +113,176 @@
 
 # Copy a list without using .copy() or list()
 
-l = [1, 2, 3, 4]
-l2 = []
-for i in l:
-    l2+=[i]
-print(l)
-print(l2)    
+# l = [1, 2, 3, 4]
+# l2 = []
+# for i in l:
+#     l2+=[i]
+# print(l)
+# print(l2)    
+
+# Second largest value in the list
+
+# def SecondLargest(list1, N):
+#     final_list = []
+
+#     for i in range(0, N):
+#         max1 = 0
+
+#         for j in range(len(list1)):
+#             if list1[j] > max1:
+#                 max1 = list1[j]
+
+#         list1.remove(max1)
+#         final_list.append(max1)
+
+#     print(final_list)               
+
+# list1 = [2, 6, 41, 85, 0, 3, 7, 6, 10]
+# N = 2
+# SecondLargest(list1, N)
+
+# Remove the duplicate element in the list
+
+# l = [1, 2, 3, 2, 3]
+# res = []
+# for i in l:
+#     if i not in res:
+#         res += [i]
+# print(res) 
+
+# Rotate a list to the left or right by k positions.
+
+# Merge two lists into one sorted list
+
+# l = [1,2,3,4,5]
+# l1 = [11,22,33,44,55]
+# l2 = []
+# l2 = l + l1
+
+# for i in range(len(l2)):
+#     for j in range(i+1, len(l2)):
+#         if l2[i] > l2[j]:
+#             l2[i], l2[j] = l2[j], l2[i]
+# print("Merged and sorted list:", l2)
+
+# Find Common elements between two lists
+
+# l = [1,2,3,4,5]
+# l1 = [1,2,33,44,55]
+# res = []
+# for i in l:
+#     for j in l1:
+#         if i == j:
+#             res += [j]
+# print(res)
+
+# Seperate a list into even and odd into two different lists
+
+# l = [1,2,3,4,5,6,7,8]
+# even = []
+# odd = []
+# for i in l:
+#     if i%2 == 0:
+#         even += [i]
+#     else:
+#         odd += [i]
+# print(even)
+# print(odd)  
+
+# Find the difference between largest and smallest element in the list
+
+# l = [1,2,3,7,8,4,5,6]
+# largest = l[0]
+# smallest = l[0]
+
+# for i in l:
+#     if i > largest:
+#         largest = i
+#     else:
+#         smallest = i
+
+# print(largest - smallest)        
+
+# Count how many elements are greater than a given number n
+
+# l = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+# n = int(input("Enter a number: "))
+# count = 0
+
+# for i in l:
+#     if i > n:
+#         count += 1
+# print(count)    
+
+# Flatten a nested list Example: [[1, 2], [3, 4]] to [1, 2, 3, 4]
+
+# l = [[1, 2], [3, 4]]
+# l1 = []
+# for i in l:
+#     for j in i:
+#         l1 += [j]
+# print(l1)        
+
+# Check if the list is sorted in asending order
+
+# l = [1,2,3,4,5]
+# res = True
+# for i in range(len(l)-1):
+#     if l[i]>l[i+1]:
+#         res = False
+#         break
+# print(res)    
+
+# Remove all elements from one list that are present in another list
+
+# l = [1,2,3,4,5]
+# l1 = [1,2,3,6,7]
+# l2 = []
+
+# for i in l:
+#     if i not in l1:
+#         l2.append(i)
+# print(l2)
+
+# Find the index of all occurrences of a given element in a list
+
+# l = [1,2,3,1,1,1]
+# j = 1
+# c = 0
+# for i in range(len(l)-1):
+#     for j in l[i]:
+#         if i == j:
+#             c += 1
+# print(c)    
+# 
+# WRONG        
+
+# Split a list into chunks of size n.
+# Example: [1,2,3,4,5,6] into chunks of 2 --> [[1,2],[3,4],[5,6]]
+
+# l = [1,2,3,4,5,6]
+# n = 2
+# chunks = []
+# for i in range(0, len(l), n):
+#     data = l[i:i+n]
+#     chunks.append(data)
+# print(chunks)    
+    
+# Replace all negative numbers in a list with 0.
+
+# l = [-1, -2 ,-3, 3, 4, 5]
+# for i in range(len(l)):
+#     if l[i] < 0:
+#         l[i] = 0
+# print(l)      
+
+# Interchange the first and last element of the list
+
+# l = [1,2,3,4,5]
+# l[0], l[len(l)-1] = l[len(l)-1], l[0]
+# print(l)
 
 # 
- 
+
+
+
