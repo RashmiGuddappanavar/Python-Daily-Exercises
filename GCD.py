@@ -30,4 +30,3 @@ if flag:
     print("\nCo-Prime Number")
 else:
     print("\nNot Co-Prime Number")   
-
