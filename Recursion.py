@@ -3,7 +3,7 @@
 #         return 
 #     printnum(n - 1)
 #     print(n, end = " ")
-    
+   
 # n = int(input("Enter num"))
 # printnum(n) 
 
