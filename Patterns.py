@@ -176,7 +176,7 @@
 
 #     print()
 #     odd = odd + 2
-#
+
 # Input: 4
 # Output:
 #    *
@@ -227,6 +227,8 @@
 # **
 # *
 
+# ------------------------------------------------------------------------------------------------------------------------------------------------
+
 # n = int(input("Enter num: "))
 # noc = 1
 # for i in range(1, n*2):
@@ -248,6 +250,8 @@
 #  ***
 #   **
 #    *
+
+# ------------------------------------------------------------------------------------------------------------------------------------------------
 
 # n = int(input("Enter num: "))
 # noc = 1
@@ -271,15 +275,339 @@
 #   * * 
 #    *      
 
+# ------------------------------------------------------------------------------------------------------------------------------------------------
+
+# n = int(input("Enter num: "))
+# noc = 1
+# for i in range(1, (n*2)):
+#     for k in range(((n*2)-1), noc , -1):
+#         print(" ", end = "")
+#     for j in range(1, (noc+1)):
+#         print("* ", end = "")
+#     print()
+#     if i < n:
+#         noc+=2
+#     else:
+#         noc-=2            
+
+# Enter num: 4
+#       * 
+#     * * *
+#   * * * * *
+# * * * * * * *
+#   * * * * *
+#     * * *
+#       *
+
+# ------------------------------------------------------------------------------------------------------------------------------------------------
+# n = int(input("Enter num: "))
+# noc = n
+# for i in range(1, (n*2)):
+
+#     for j in range(1, (noc+1)):
+#         print("* ", end = "")
+#     print()
+
+#     if i < n:
+#         noc-=1
+#     else:
+#         noc+=1   
+
+# ****
+# ***
+# **
+# *
+# **
+# ***
+# ****
+
+# ------------------------------------------------------------------------------------------------------------------------------------------------
+
+# n = int(input("Enter num: "))
+# noc = n
+# for i in range(1, (n*2)):
+#     for k in range(1, (n-noc)+1):
+#         print(" ", end = "")
+#     for j in range(1, noc+1):
+#         print("*", end = "")
+#     print()
+
+#     if i < n:
+#         noc-=1
+#     else:
+#         noc+=1    
+
+# ****
+#  ***
+#   **
+#    *
+#   **
+#  ***
+# ****
+
+# ------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+# n = int(input("Enter num: "))
+# noc = n
+# for i in range(1, (n*2)):
+#     for k in range(1, (n-noc)+1):
+#         print(" ", end = "")
+#     for j in range(1, noc+1):
+#         print("* ", end = "")
+#     print()
+
+#     if i < n:
+#         noc-=1
+#     else:
+#         noc+=1 
+
+# * * * *
+#  * * *
+#   * *
+#    *
+#   * *
+#  * * *
+# * * * *
+
+# n = int(input("Enter num: "))
+# noc = 1
+# nor = (n*2)-1
+# for i in range(1, (n*2)):
+#     for j in range(1, (n*2)):
+#         if j <= noc or j >= nor:
+#             print("*", end = "")
+#         else:
+#             print(" ", end = "")   
+#     print()
+#     if i < n:
+#         noc+=1
+#         nor-=1
+#     else:
+#         noc-=1
+#         nor+=1
+        
+# *     *
+# **   **
+# *** ***
+# *******
+# *** ***
+# **   **
+# *     *
+
+# Hallow Patterns
+
+# n = int(input("Enter num: "))
+# for i in range(1, n+1):
+#     for j in range(1, n+1):
+#         if i == 1 or i == 5 or j == 1 or j == n:
+#             print("*", end = "")
+#         else:
+#             print(" ", end = "")
+#     print()             
+
+# Enter num: 5
+# *****
+# *   *
+# *   *
+# *   *
+# *****
+
+# n = int(input("Enter num: "))
+# if n%2 == 0:
+#     n= n+1
+# for i in range(1, n+1):
+#     for j in range(1, n+1):
+#         if i == 1 or i == 5 or j == 1 or j == n or i == j or (i+j) == (n+1):
+#             print("*", end = "")
+#         else:
+#             print(" ", end = "")
+
+#         print() 
+
+# Enter num: 5
+# *****
+# ** **
+# * * *
+# ** **
+# *****               
+
+# n = int(input("Enter num: "))
+
+# for i in range(1, n+1):
+#     for j in range(1, n+1):
+#         if i == 1 or i == 5 or i == j or (i+j) == (n+1):
+#             print("*", end = "")
+#         else:
+#             print(" ", end = "")
+
+#     print() 
+
+# Enter num: 5
+# *****
+#  * *
+#   *
+#  * *
+# *****
+
+# n = int(input("Enter num: "))
+# if n%2 == 0:
+#     n= n+1
+# for i in range(1, n+1):
+#     for j in range(1, n+1):
+#         if  j == 1 or j == n or i == j or (i+j) == (n+1):
+#             print("*", end = "")
+#         else:
+#             print(" ", end = "")
+
+#     print() 
+
+# Enter num: 5
+# *   *
+# ** **
+# * * *
+# ** **
+# *   *
+
+# n = int(input("Enter num: "))
+# for i in range(1, (n+1)):
+#     for j in range(1, (i+1)):
+        # if i == n or j == 1 or i == j:
+        #     print("*", end = "")
+        # else:
+        #     print(" ", end = "")
+
+#     print()            
+
+# Enter num: 5
+# *
+# **
+# * *
+# *  *
+# *****
+
+# n = int(input("Enter num: "))
+# for i in range(1, (n+1)):
+#     for k in range(n, i, -1):
+#         print(" ", end = "")
+
+#     for j in range(1, (i+1)):
+#         if i == n or j == 1 or i == j:
+#             print("*", end = "")
+#         else:
+#             print(" ", end = "")
+
+#     print()    
+
+# Enter num: 5
+#     *
+#    **
+#   * *
+#  *  *
+# *****
+
+# n = int(input("Enter num: "))
+# for i in range(1, (n+1)):
+#     for k in range(n, i, -1):
+#         print(" ", end = "")
+
+#     for j in range(1, (i+1)):
+#         if i == n or j == 1 or i == j:
+#             print("* ", end = "")
+#         else:
+#             print("  ", end = "")
+
+#     print()
+
+# Enter num: 5
+#     * 
+#    * *
+#   *   *
+#  *     *
+# * * * * *     
+
+# n = int(input("Enter num: "))
+# for i in range(n, 0, -1):
+#     for j in range(1, (i+1)):
+#         if i == n or j == 1 or i == j:
+#             print("*", end = "")
+#         else:
+#             print(" ", end = "")    
+#     print()   
+
+# Enter num: 5
+# *****
+# *  *
+# * *
+# **
+# *     
+
+# n = int(input("Enter num: "))
+# noc = 1
+# for i in range(1, (n*2)):
+#     for j in range(1, (noc+1)):
+#         if j == 1 or j == noc:
+#             print("*", end = "")
+#         else:
+#             print(" ", end = "")            
+    
+#     print()
+
+#     if i < n:
+#         noc+=1
+#     else:
+#         noc-=1    
+
+# Enter num: 4
+# *
+# **
+# * *
+# *  *
+# * *
+# **
+# *        
+
+# n = int(input("Enter num: "))
+# noc = 1
+# for i in range(1, (n*2)):
+#     for k in range(n, noc, -1):
+#         print(" ", end = "")
+#     for j in range(1, (noc+1)):
+#         if j == 1 or j == noc:
+#             print("*", end = "")
+#         else:
+#             print(" ", end = "")            
+    
+#     print()
+
+#     if i < n:
+#         noc+=1
+#     else:
+#         noc-=1 
+
+# Enter num: 4
+#    *
+#   **
+#  * *
+# *  *
+#  * *
+#   **
+#    *        
+
 n = int(input("Enter num: "))
-noc = 1
-for i in range(1, n*2):
-    for k in range(n, noc, -1):
-        print(" ", end = "")
-    for j in range(1, noc+1):
-        print("*", end = "")
+odd = (n*2)-1
+
+for i in range(1, n+1):
+    for k in range(1, i):
+        print(" ", end="")
+
+    for j in range(1, odd+1):
+        if i == 1 or j == 1 or j == odd:
+            print("*", end="")
+        else:
+            print(" ", end="")
     print()
-    if i < n:
-        noc+=1
-    else:
-        noc-=1  
+    odd -= 2
+
+
+
